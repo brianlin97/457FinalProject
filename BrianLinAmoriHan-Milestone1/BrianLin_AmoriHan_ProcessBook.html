@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Final Project Proposal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans" rel="stylesheet">
+  <style media="screen">
+  body:{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div id="body">
+  <h1>Final Project Proposal</h1>
+  <h2>Basic Info</h2>
+  <h3>Project Title: Echoes of Humanity </h3>
+  <p><strong>Name: <a href="http://www.brianlindesign.com/">Brian Lin</a> </strong> |  E-mail: brian.lin@wustl.edu | ID:451055  </h3>
+  <p><strong>Name: Amori Han </strong> | E-mail: hamory@wustl.edu | ID:466837   </h3>
+  <p>Repository:   <a href="https://bitbucket.org/Amori079/visualization-final/src/master/ ">Click here</a></h3>
+
+  <div id="toc">
+  <h3>Table of Contents</h4>
+  <a href="#finalproposal"><h4>Final Proposal</h4></a>
+  <a href="#milestone1"><h4>Milestone 1</h4></a>
+</div>
+
+  <h1 id="finalproposal">Final Proposal</h1>
+  <h2>Background and Motivation</h2>
+  <p> Discuss your motivations and reasons for choosing this project, especially any background or research interests that may have influenced your decision.</p>
+  Our primary purpose is to endow voice with data visualization so we want some dynamic data and every time the data changed, visualization will be changed with sound, which is more absorbing. And after brainstorming all the real-time data, flight data abstracted us. But then we realized that if we use all the data, the chorus of voice would be chaotic, so the best choice is to focus the data only on one airport, which would cause our seem overly-simple. Then we quickly brainstormed and searched for another category of live data. A good idea suddenly occurred. If our visualization could display the life that is newly born and just passed away, the voice would be more meaningful. It is like the sound of the soul.
+  <h2>Project Objectives</h2>
+  <p> Provide the primary questions you are trying to answer with your visualization.</p>
+  This design helps people feel the flow of life.
+  <p> What would you like to learn and accomplish? List the benefits. </p>
+  What we want to learn:
+  <ul>
+    <li>Combine music with data visualization change</li>
+    <li>Exert all the javascript skills</li>
+  </ul>
+  <h2>Data</h2>
+  <p>  From where and how are you collecting your data?If appropriate, provide a link to your data sources. </p>
+  From CIA, the link is : https://www.cia.gov/library/publications/the-world-factbook/rankorder/2054rank.html
+  <br>
+  We will use Poisson distribution to create randomness and see which region of  United States will have a birth or death.
+  <br>
+  <a href="https://www.cdc.gov/nchs/data/nvsr/nvsr66/nvsr66_01.pdf">Birth Data for 2015</a>
+  <br>
+  <a href="https://www.cdc.gov/nchs/data/databriefs/db328-h.pdf">Death Data for 2017</a>
+  <h2>Data Processing</h2>
+  <p>  Do you expect to do substantial data cleanup?
+    What quantities do you plan to derive from your data?
+    How will data processing be implemented? </p>
+    We will obtain the death rate and birth rate to run a simulation for the death and birth on the earth. For reference: https://worldbirthsanddeaths.com/
+    <br>
+
+    <p>
+      <h2>Visualization Design</h2>
+      <p>
+        Visualization Design. How will you display your data? Provide some general ideas that you have for the visualization design. Create three alternative designs for your visualization. Create one final design that incorporates the best of your three designs. Describe your designs and justify your choices of visual encodings. You use the Five Design Sheet Methodology (Links to an external site.)Links to an external site..
+      </p>
+      <p>
+        We want to display a map of United States using D3 tools as our main image. When a new birth or death is recorded, we will use circles which correspond to their geo-specific location. We also envision having a table which logs the births/deaths during that particular day, as well as information about which countries in  United States has the most amount of births and deaths.
+      </p>
+      <a href="https://drive.google.com/file/d/1-SI8APjDmcjAGDwK_26FHNLxnavl2uQ-/view?usp=sharing">Link is here </a>
+      <h2>Must Have Features</h2>
+      <p>List the features without which you would consider your project to be a failure.</p>
+      <p>The features we absolutely need are as follows:</p>
+      <ul>
+        <li>A simulation program that allows us to calculate the births and deaths in  United States in real time. </li>
+        <li>Sound cues which correspond to a birth or a death.</li>
+        <li>A log or stored list which provide more detailed info about each birth or death which occured.</li>
+        <li>A map or similar visual with which to display the information.</li>
+      </ul>
+      <h2>Optional Features</h2>
+      <p>List the features which you consider to be nice to have, but not critical.</p>
+      <p>The features which would be nice to have are as follows:</p>
+      <ul>
+        <li> A running tally or list of the simulated US population, as well as a count for the births and deaths after the start of a simulation run.</li>
+        <li> A D3 force diagram that continuously updates, with each birth and death as a new circle which can be interacted with </li>
+      </ul>
+      <h2>Project Schedule</h2>
+      <p>Make sure that you plan your work so that you can avoid a big rush right before the final project deadline, and delegate different modules and responsibilities among your team members. Write this in terms of weekly deadlines.</p>
+      <p>We envision our schedule to be as follows:</p>
+      <ul>
+        <li> Week 1 (3/24 – 3/30): Finalize the design, and create a rough prototype for the simulation. </li>
+        <li> Week 2 (3/31 – 4/6): Find sound cues which would work for births and deaths. Finalize the simulation prototype, and run it. Find state-specific and city-specific data to predict the births and deaths in each particular location.</li>
+        <li> Week 3 (4/7 – 4/13): Create the table which stores a list of births and deaths, and implement a population counter. Create an intro to the website which is interactive and explains the purpose of the project.</li>
+        <li> Week 4 (4/14 – 4/20): Implement force diagram. Work out any bugs and finalize the design. </li>
+        <li> Week 5 (4/1 – 4/27): Present and receive feedback! </li>
+      </ul>
+      <p> If you have any questions, please reach out to us!</p>
+
+      <h1 id="milestone1">Milestone 1</h1>
+
+      <h3>About the Data</h3>
+      <p>1: Random data of the interval of new birth/deaths in America<br>"data/Population Counters.csv"</p>
+      <h6>Data Source: U.S Census Bureau</h6>
+      <a href="https://www.census.gov/popclock/">Link to data</a>
+      <p> This data records the total population of U.S, the birth and death rates.
+    We created two normal distributions to simulate the interval between 2 deaths or 2 births. Therefore, the number is distributed with a standard deviation and set mean.</p>
+    <br>
+    <p>2: Random choice of a city and county to locate where that birth/death happens.<br>data source:U.S Census Bureau</p>
+    <a href="https://www.census.gov/popclock/">Link to data</a>
+    <p>This data records each county's population. It records the fraction of the county's population relative to the U.S. population, and will be used as the probability when we tried to randomly choose a county.</p>
+
+    <h3>API:</h3>
+    <a href="https://api.census.gov/data/2017/pep/">Link to the API</a>
+    <h6>Data Source:U.S Census Bureau</h6>
+    <p>The API lets us check the birth and death amount in each county and city.
+    It also can be used as our basis for location simulation to provide an extra level of realism.</p>
+
+    <h3>Design Improvements</h3>
+    <img src="drafts-2/1.png" style="width:80%"></img>
+    <p>In the most recent design draft of our project, we want to emphasize the interactiveness of our project and improve the visual design. When opening the site, the first thing the user would see is a map of the US. The visualization is color-coded, with yellow representing births and red representing deaths.The simulation will start and circles will start to appear, creating a ripple-like effect and trigger a bell-like sound from a HAPI drum.</p>
+    <a href="http://www.hapitones.com/play-hapi-slim-drum-g-major.html">Listen to the HAPI bell sounds here</a>
+    <p>The sonic feedback will be another data point. The circles that are created will then fall down. The circles will aggregate and collect as the simulation continues running, give the user a visual sense of the visual representation of life and death, letting them create their own narrative.</p>
+    <img src="drafts-2/2.png" style="width:80%"></img>
+    <p>Hovering over the balls will reveal the data node.<p>
+    <img src="drafts-2/3.png" style="width:80%"></img>
+    <p>The detailed data table will keep a history of each data node which the user can scroll through.</p>
+  </div>
+    </body>
+    </html>

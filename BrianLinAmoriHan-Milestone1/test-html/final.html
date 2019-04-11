@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <h1>The sound of life</h1>
+    <h2>Population:
+      <span id="population"></span>
+    </h2>
+    <div class="countNum">
+      <h3>Since simulation starts</h3>
+      <h2 class="birth">birth:
+      <span id="birthNum"></span>
+      <span class="sec"></span>
+      <span>/sec</span>
+      </h2>
+      <h2 class="death">deaths:
+      <span id="deathNum"></span>
+      <span class="sec"></span>
+      <span>/sec</span>
+      </h2>
+    </div>
+
+    <!-- visualization holder -->
+    <div id="life-map"></div>
+
+    <div id="life-box"></div>
+
+    <div id="life-chart"></div>
+
+    <div class="birth" id="most"></div>
+    <div class="death" id="most"></div>
+
+
+
+  <script src="js/d3.js"></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/data-generator.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
